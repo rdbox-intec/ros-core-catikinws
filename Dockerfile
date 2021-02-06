@@ -5,6 +5,7 @@ LABEL maintainer="INTEC Inc<info-rdbox@intec.co.jp>"
 ENV ROS_DISTRO=noetic
 
 COPY ./ros_entrypoint.sh /ros_entrypoint.sh
+COPY ./helper_script_for_armhf.sh /helper_script_for_armhf.sh
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -12,6 +13,8 @@ RUN apt-get update && \
                                     build-essential \
                                     iputils-ping \
                                     net-tools
+
+RUN /helper_script_for_armhf.sh
 
 RUN /bin/bash -c "source /opt/ros/noetic/setup.bash && \
                 mkdir -p /catkin_ws/src && \
