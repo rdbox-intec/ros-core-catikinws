@@ -9,7 +9,7 @@ This image is compatible with the following platforms
 - linux/arm/v7
 
 You can retrieve the image with the following command.  
-[Docker Hub](https://hub.docker.com/repository/docker/rdbox/ros-core-catkinws)
+[Docker Hub](https://hub.docker.com/r/rdbox/ros-core-catkinws)
 
 ```bash
 docker pull rdbox/ros-core-catikinws:noetic

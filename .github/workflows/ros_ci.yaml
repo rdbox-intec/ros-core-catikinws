@@ -1,6 +1,8 @@
 name: ROS1 with catkin_ws
 
 on:
+  schedule:
+    - cron:  '0 0 * * 0'
   push:
     branches:
       - main
