@@ -1,5 +1,7 @@
 # ros-core-catkinws
 
+![ROS1 with catkin_ws](https://github.com/rdbox-intec/ros-core-catkinws/workflows/ROS1%20with%20catkin_ws/badge.svg)
+
 This project will build a ROS container image with ROS1 catkin_ws already configured.
 
 This image is compatible with the following platforms
